@@ -1,0 +1,52 @@
+{
+  "approve_all_full_limit": {
+    "realised_profit": -27226620.753333323,
+    "ci95": [
+      -32938501.74874999,
+      -20805817.45858332
+    ],
+    "approval_rate": 1.0,
+    "avg_limit_mult": 1.0,
+    "default_rate_of_approved": 0.22116666666666668
+  },
+  "npv_strategy_catboost": {
+    "realised_profit": 21483620.92666667,
+    "ci95": [
+      18304154.462583337,
+      24628598.503666665
+    ],
+    "approval_rate": 0.405,
+    "avg_limit_mult": 0.405,
+    "default_rate_of_approved": 0.10411522633744856
+  },
+  "npv_strategy_scorecard": {
+    "realised_profit": 21396224.520000003,
+    "ci95": [
+      18321233.225666665,
+      24297952.795083337
+    ],
+    "approval_rate": 0.3566666666666667,
+    "avg_limit_mult": 0.3566666666666667,
+    "default_rate_of_approved": 0.11121495327102804
+  },
+  "pd_cutoff_same_approval_rate": {
+    "realised_profit": 14473714.276666671,
+    "ci95": [
+      11154609.064583337,
+      17911457.736166667
+    ],
+    "approval_rate": 0.405,
+    "avg_limit_mult": 0.405,
+    "default_rate_of_approved": 0.0757201646090535
+  },
+  "oracle_upper_bound": {
+    "realised_profit": 51847379.24666667,
+    "ci95": [
+      50017504.565416664,
+      53570970.09366667
+    ],
+    "approval_rate": 0.7788333333333334,
+    "avg_limit_mult": 0.7788333333333334,
+    "default_rate_of_approved": 0.0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "max_feature_psi_train_vs_test": 0.003357734133293637,
+  "n_alert_features_simulated_shock": 10,
+  "score_psi_simulated_shock": 0.1445190802522013,
+  "mean_pd_normal": 0.22283093078499175,
+  "mean_pd_shock": 0.25367642901967774,
+  "anomaly_flag_rate_normal": 0.010833333333333334,
+  "anomaly_flag_rate_shock": 0.016166666666666666
+}

@@ -1,0 +1,72 @@
+                          model    auc   gini     ks  brier    ece  hl_stat  hl_pvalue
+                scorecard (raw) 0.7770 0.5540 0.4202 0.1354 0.0140  17.8859     0.0221
+scorecard (isotonic-calibrated) 0.7766 0.5532 0.4163 0.1354 0.0164  14.0595     0.0802
+                 lightgbm (raw) 0.7933 0.5866 0.4543 0.1309 0.0092   4.9117     0.7670
+ lightgbm (isotonic-calibrated) 0.7929 0.5858 0.4526 0.1312 0.0162  21.9838     0.0049
+                 catboost (raw) 0.7919 0.5838 0.4527 0.1314 0.0100   6.9026     0.5472
+ catboost (isotonic-calibrated) 0.7909 0.5817 0.4480 0.1322 0.0115  11.2107     0.1900
+{
+  "approve_all_full_limit": {
+    "realised_profit": -27226620.753333323,
+    "ci95": [
+      -32938501.74874999,
+      -20805817.45858332
+    ],
+    "approval_rate": 1.0,
+    "avg_limit_mult": 1.0,
+    "default_rate_of_approved": 0.22116666666666668
+  },
+  "npv_strategy_catboost": {
+    "realised_profit": 21483620.92666667,
+    "ci95": [
+      18304154.462583337,
+      24628598.503666665
+    ],
+    "approval_rate": 0.405,
+    "avg_limit_mult": 0.405,
+    "default_rate_of_approved": 0.10411522633744856
+  },
+  "npv_strategy_scorecard": {
+    "realised_profit": 21396224.520000003,
+    "ci95": [
+      18321233.225666665,
+      24297952.795083337
+    ],
+    "approval_rate": 0.3566666666666667,
+    "avg_limit_mult": 0.3566666666666667,
+    "default_rate_of_approved": 0.11121495327102804
+  },
+  "pd_cutoff_same_approval_rate": {
+    "realised_profit": 14473714.276666671,
+    "ci95": [
+      11154609.064583337,
+      17911457.736166667
+    ],
+    "approval_rate": 0.405,
+    "avg_limit_mult": 0.405,
+    "default_rate_of_approved": 0.0757201646090535
+  },
+  "oracle_upper_bound": {
+    "realised_profit": 51847379.24666667,
+    "ci95": [
+      50017504.565416664,
+      53570970.09366667
+    ],
+    "approval_rate": 0.7788333333333334,
+    "avg_limit_mult": 0.7788333333333334,
+    "default_rate_of_approved": 0.0
+  }
+}
+ lgd  apr  approval_rate  profit_npv  profit_same_rate_cutoff  profit_approve_all
+ 0.4 0.15           0.41       14.86                    10.22              -17.37
+ 0.4 0.22           0.47       27.17                    21.95               -0.87
+ 0.4 0.30           0.56       42.89                    36.29               17.98
+ 0.6 0.15           0.31       10.51                     4.85              -43.72
+ 0.6 0.22           0.40       21.48                    14.47              -27.23
+ 0.6 0.30           0.45       35.63                    27.49               -8.37
+ 0.8 0.15           0.24        6.94                     1.06              -70.08
+ 0.8 0.22           0.33       17.48                     8.63              -53.58
+ 0.8 0.30           0.41       29.72                    20.44              -34.73
+{'max_feature_psi_train_vs_test': 0.003357734133293637, 'n_alert_features_simulated_shock': 10, 'score_psi_simulated_shock': 0.1445190802522013, 'mean_pd_normal': 0.22283093078499175, 'mean_pd_shock': 0.25367642901967774, 'anomaly_flag_rate_normal': 0.010833333333333334, 'anomaly_flag_rate_shock': 0.016166666666666666}
+{'by_sex': {1.0: {'approval_rate': 0.4296, 'default_rate_if_all': 0.2411}, 2.0: {'approval_rate': 0.3889, 'default_rate_if_all': 0.2081}}, 'by_age': {'<30': {'approval_rate': 0.4226, 'default_rate_if_all': 0.2186}, '30-39': {'approval_rate': 0.4075, 'default_rate_if_all': 0.199}, '40-49': {'approval_rate': 0.3789, 'default_rate_if_all': 0.2454}, '50+': {'approval_rate': 0.3951, 'default_rate_if_all': 0.2605}}, 'disparate_impact_ratio_sex': 0.9053160837148209}
+done

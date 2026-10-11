@@ -1,0 +1,31 @@
+{
+  "by_sex": {
+    "1.0": {
+      "approval_rate": 0.4296,
+      "default_rate_if_all": 0.2411
+    },
+    "2.0": {
+      "approval_rate": 0.3889,
+      "default_rate_if_all": 0.2081
+    }
+  },
+  "by_age": {
+    "<30": {
+      "approval_rate": 0.4226,
+      "default_rate_if_all": 0.2186
+    },
+    "30-39": {
+      "approval_rate": 0.4075,
+      "default_rate_if_all": 0.199
+    },
+    "40-49": {
+      "approval_rate": 0.3789,
+      "default_rate_if_all": 0.2454
+    },
+    "50+": {
+      "approval_rate": 0.3951,
+      "default_rate_if_all": 0.2605
+    }
+  },
+  "disparate_impact_ratio_sex": 0.9053160837148209
+}

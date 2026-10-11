@@ -1,0 +1,7 @@
+model,auc,gini,ks,brier,ece,hl_stat,hl_pvalue
+scorecard (raw),0.777,0.554,0.4202,0.1354,0.014,17.8859,0.0221
+scorecard (isotonic-calibrated),0.7766,0.5532,0.4163,0.1354,0.0164,14.0595,0.0802
+lightgbm (raw),0.7933,0.5866,0.4543,0.1309,0.0092,4.9117,0.767
+lightgbm (isotonic-calibrated),0.7929,0.5858,0.4526,0.1312,0.0162,21.9838,0.0049
+catboost (raw),0.7919,0.5838,0.4527,0.1314,0.01,6.9026,0.5472
+catboost (isotonic-calibrated),0.7909,0.5817,0.448,0.1322,0.0115,11.2107,0.19

@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+data/
+*.pyc
+metastore_db/
+spark-warehouse/
